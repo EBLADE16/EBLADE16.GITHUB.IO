@@ -1,7 +1,36 @@
-.heading {font-style: calibri;
-  font-size: 20px;
-  color: red;
+body {
+  
+  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+  margin: 0;
+  padding: 0;
 }
-#title {font-size: 35px;
-  color: blue;
+
+h1 {
+  color: rgb(87,207,131);
+  font-size: 45px;
+  padding-top: 100px;
+  width: 100%;
+  font-family: Georgia;
+  text-align: center;
+}
+
+p {
+  color: AliceBlue;
+  line-height: 1.3em;
+  text-align: center;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+.image {
+  background-image: url("https://s.yimg.com/iu/api/res/1.2/n11WKj2Umor19oqbvjzslw--~C/YXBwaWQ9eXNwb3J0cztmaT1maWxsO2g9NTAwO3E9MTAwO3c9NTAw/https://s.yimg.com/cv/apiv2/default/20181126/nhl/500x500/wild.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.ul {
+    color: white;
+    font-size: 20px;
 }
