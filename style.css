@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-  color: AliceBlue;
+  color: white;
   line-height: 1.3em;
   text-align: center;
   width: 100%;
@@ -34,3 +34,9 @@ p {
     color: white;
     font-size: 20px;
 }
+.game {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
