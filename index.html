@@ -3,12 +3,11 @@
 
 <head>
   <title>The Henry Maag Experience</title>
-
   <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
+    <div><!--delete class and h5 class-->        
         <svg width="1350" height="100" align="center">
             <rect width="2000" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
         </svg>
@@ -17,38 +16,44 @@
     <p> My favorite song.</p>
     <audio controls>
         <source src="C:\Users\henry\Downloads\Imagine Dragons - Natural.mp3" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg" align="center">
-      </audio>
-    <canvas width="cover" height="cover" id="canvas"></canvas>
-  <div class="image">
-  </div>
-    <p>Hello, I am Henry Maag and I am a Sophomore in college at FGCU. I have been a major in software engineering over the past semester. I enjoy snowboarding and watching hockey in my free time. It is my goal to eventually move to either Minnesota or Colorado after attaining a degree in software engineering.</p>
+    </audio>
+    <canvas width="cover" height="cover" id="canvas">
+    </canvas>
+    <div class="image">
+    </div>
+        <p>Hello, I am Henry Maag and I am a Sophomore in college at FGCU. I have been a major in software engineering over the past semester. I enjoy snowboarding and watching hockey in my free time. It is my goal to eventually move to either Minnesota or Colorado after attaining a degree in software engineering.</p>
 
-    <ul class="ul">
-        <li   href="https://scratch.mit.edu/users/ebladeh16/">Scratch Experience</li>
-        <li href="https://www.codecademy.com/users/ebladeh16/achievements">Code Academy</li>
-        <li href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript">10 Days of Coding</li>
-    </ul>
-    <div class="game">My Latest Scratch Project</div>
+        <ul class="ul">
+            <li   href="https://scratch.mit.edu/users/ebladeh16/">Scratch Experience</li>
+            <li href="https://www.codecademy.com/users/ebladeh16/achievements">Code Academy</li>
+            <li href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript">10 Days of Coding</li>
+        </ul>
+                <!--issues with links, fix-->
+        <div class="game">My Latest Scratch Project</div>
+        <!-- may not show up, Henry Maag. Code from the scratch website-->
     <div>
-    <iframe class="project" width="485" height="402" left="50" src="http://scratch.mit.edu/projects/embed/281487614/?autostart=true" frameborder="0" allowfullscreen align:"center"></iframe>
-    <br/><br/>
-</div>
-    <div> <h2 class=h2>Accessability</h2>
-    <p>I have gotten rid of certain elements that I felt were not necessary in the project.</p></div>
-   
-    <embed src="C:\Users\henry\OneDrive\Desktop\field report.pdf" type="application/pdf" width="100%" height="600px" />
+        <iframe class="project" width="485" height="402" left="50" src="http://scratch.mit.edu/projects/embed/281487614/?autostart=true" frameborder="0" allowfullscreen align:"center"></iframe>
+             <!-- having issues with align code, replace-->
+        <br/><br/>
+            <p>I was inspired to create this game by similar space shooting games such as galaga or space invaders. I have used some of scratch's forums for inspiration on how to do certain things. I created the "pew" noise heard upon firing the blaster using audacity as a wav file. Wav is uncompressed and did not require any other form of download, as opposed to the mp3 files which required their own application due to it's compressed nature. I used audacity to record and clip the sound to the size I wanted. I created the blaster and the rocket graphics using the paint new sprite option in scratch. These graphics were in the vector form, which differs from raster in that they are precise down to each pixel, where a raster graphic may differ as it is not represented by formulas. I did this by combining simple shapes into those more fitting for the game. I used and, or and not all to modify the flight path of the blaster. I used this to determine where the blaster would fly and under which conditions.Boolean logic simply states that something is either a 1 or a 0, on or off respectively. Number systems are used to describe numbers. These number systems put values into forms that a computer can interpret.</p>
+    </div>
+    <div> 
+        <h2 class=h2>Accessability</h2>
+        <p>I have gotten rid of certain elements that I felt were not necessary in the project.</p>
+    </div>
+         <!-- missing items: video; scratch game and pdf added back, Henry Maag-->
+        <embed src="C:\Users\henry\OneDrive\Desktop\field report.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed src="C:\Users\henry\OneDrive\Pictures\Camera Roll\Profile (1).pdf" type="application/pdf" width="100%" height="600px" />
     </body>
-<script>
-var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
-// Create gradient
-var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-grd.addColorStop(0,"white");
-grd.addColorStop(1,"#35577D");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-align: center;
-</script>
+        <script>
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                <!-- code heavily inspired by w3schools-->
+            grd.addColorStop(0,"white");
+            grd.addColorStop(1,"#35577D");
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+            align: center;
+        </script>
 </html>
